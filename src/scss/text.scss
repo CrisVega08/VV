@@ -21,3 +21,38 @@
   letter-spacing: 0.2px;
   line-height: 26px;
 }
+
+@media only screen and (max-width: $medium-screens) {
+  .main-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .normal-title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .normal-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+@media only screen and (max-width: $mobile-screens) {
+  .main-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .normal-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .normal-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -9,7 +9,8 @@
   flex-direction: column;
   height: calc(100vh - #{$navbar-height});
   justify-content: center;
-  padding-left: 15vw;;
+  min-height: 575px;
+  padding: 0 15vw;
   > * {
     margin-bottom: 32px;
   }
@@ -23,6 +24,10 @@
 .wellcome {
   font-family: Roboto;
   max-width: 540px;
+}
+
+.invitation {
+  max-width: 905px;
 }
 
 .service {
@@ -45,5 +50,22 @@
     height: 1px;
     position: absolute;
     width: 25px;
+  }
+}
+
+@media only screen and (max-width: $medium-screens) {
+  .container {
+    padding: 0 10vw;
+    min-height: 0;
+    > * {
+    margin-bottom: 42px;
+  }
+  }
+  .main-title {
+    max-width: 440px;
+  }
+
+  .invitation {
+     max-width: 80vw;
   }
 }
