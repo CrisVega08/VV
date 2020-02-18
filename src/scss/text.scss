@@ -1,0 +1,23 @@
+@import './variables/colors';
+@import './variables/sizes';
+
+.main-title {
+  color: $scarpa-flow;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+.normal-title {
+  color: $scarpa-flow;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 58px;
+}
+
+.normal-text {
+  color: $scarpa-flow;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}

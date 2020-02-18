@@ -1,0 +1,49 @@
+@import 'variables/colors';
+@import 'variables/sizes';
+
+.container {
+  background: right / contain no-repeat url('./assets/mano.png'),
+              right / contain no-repeat url('./assets/img_fondo_2x.png'),
+              linear-gradient(225.04deg, $sisal 0%, $nomad 100%), ;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - #{$navbar-height});
+  justify-content: center;
+  padding-left: 15vw;;
+  > * {
+    margin-bottom: 32px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  max-width: 550px;
+}
+
+.wellcome {
+  font-family: Roboto;
+  max-width: 540px;
+}
+
+.service {
+  color: $scarpa-flow;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 26px;
+  margin-right: 35px;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    background-color: $scarpa-flow;
+    bottom: -5px;
+    box-sizing: border-box;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+    height: 1px;
+    position: absolute;
+    width: 25px;
+  }
+}
