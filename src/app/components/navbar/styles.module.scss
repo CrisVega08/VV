@@ -1,0 +1,84 @@
+@import 'variables/sizes';
+@import 'variables/colors';
+
+.navbar {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  height: var(--navbar-height);
+  justify-content: center;
+}
+
+.navbar-clicked {
+  // background-color: $sisal;
+  .burger-icon {
+    path {
+      fill: $tacha;
+    }
+
+    &:hover {
+      path {
+        fill: $scarpa-flow;
+      }
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+}
+
+.navbar-mobile {
+  justify-content: space-between;
+  padding: 0 10vw;
+  position: relative;
+}
+
+.section {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+  margin-right: 5vw;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 5vw;
+}
+
+.burger-icon {
+  width: 50px;
+  cursor: pointer;
+
+  path {
+    fill: $scarpa-flow;
+  }
+
+  &:hover {
+    path {
+      fill: $tacha;
+    }
+  }
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  left: 0;
+  position: absolute;
+  top: var(--navbar-height);
+  width: 100%;
+}
+
+.section-toggle {
+  background-color: $white;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 0;
+  text-align: center;
+
+  &:hover {
+    background-color: $tacha;
+    color: $white;
+  }
+}

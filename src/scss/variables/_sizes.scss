@@ -1,6 +1,17 @@
 $navbar-height: 90px;
-
+$navbar-height-mobile: 60px;
 
 // media queries 
 $medium-screens: 1200px;
 $mobile-screens: 420px;
+$small-screens: 720px;
+
+:root {
+  --navbar-height: #{$navbar-height};
+}
+
+@media only screen and (max-width: $small-screens) {
+  :root {
+    --navbar-height: #{$navbar-height-mobile};
+  }
+}
