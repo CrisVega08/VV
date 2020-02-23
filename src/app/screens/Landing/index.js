@@ -1,10 +1,11 @@
 import React from 'react';
 
+import Navbar from '../../components/navbar';
+
 import Home from './sections/Home';
 import Nails from './sections/Nails';
 import Face from './sections/Face';
-
-import Navbar from '../../components/navbar';
+import Contact from './sections/Contact';
 
 function Landing () {
   return (
@@ -13,6 +14,7 @@ function Landing () {
       <Home />
       <Nails />
       <Face />
+      <Contact />
     </>
   )
 }

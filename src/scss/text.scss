@@ -22,6 +22,20 @@
   line-height: 26px;
 }
 
+.contact-option {
+  color: $scarpa-flow;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 43px;
+}
+
+.contact-info-option {
+  color: $scarpa-flow;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 28px;
+}
+
 @media only screen and (max-width: $medium-screens) {
   .main-title {
     font-size: 60px;
