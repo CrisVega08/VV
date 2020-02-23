@@ -19,7 +19,7 @@ function Carousel() {
   );
 
   return (
-    <div className={styles.carousel} >
+    <section className={styles.carousel} id="nails">
       <div className={styles.carouselActions}>
         <div>
           <button className={styles.carouselBtn}
@@ -50,7 +50,7 @@ function Carousel() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

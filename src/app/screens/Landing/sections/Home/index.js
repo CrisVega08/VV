@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 function Home() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container} id="home">
       <h3 className={`main-title ${styles.title}`}>
         Cuidarte es la mejor elección
       </h3>
@@ -18,7 +18,7 @@ function Home() {
         ))}
       </div>
       <h4 className={`normal-title ${styles.invitation}`}>¡ Te esperamos para que vivas una experiencia de lujo !</h4>
-    </div>
+    </section>
   )
 }
 

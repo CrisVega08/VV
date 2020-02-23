@@ -1,0 +1,43 @@
+@import 'variables/colors';
+
+.container {
+  background: right / contain no-repeat url('../../../../../assets/img_fondo_2x.png');
+  background-color: $bridal-heath;
+  height: 100vh;
+  padding: 5vh 15vw;
+
+  > :nth-child(even) {
+    justify-content: flex-end;
+
+    .services-texts {
+      text-align: end;
+    }
+  }
+}
+
+.service {
+  display: flex;
+  margin: 0 20px;
+}
+
+.services-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 20px;
+  max-width: 300px;
+
+  > :first-child {
+    letter-spacing: 0.45px;
+    line-height: 39px;
+  }
+
+  > :last-child {
+    font-family: Roboto;
+    max-width: 300px;
+  }
+}
+
+.images {
+  max-width: 30vh;
+}
