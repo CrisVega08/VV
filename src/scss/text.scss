@@ -36,6 +36,14 @@
   line-height: 28px;
 }
 
+.massage-title {
+  color: $white;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 39px;
+}
+
 @media only screen and (max-width: $medium-screens) {
   .main-title {
     font-size: 60px;

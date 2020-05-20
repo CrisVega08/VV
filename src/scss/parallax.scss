@@ -1,0 +1,36 @@
+// .slide {
+//   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+//   box-sizing: border-box;
+//   min-height: 100vh;
+//   padding: 25vh 10%;
+//   position: relative;
+//   transform-style: inherit;
+//   width: 100vw;
+// }
+
+// .slide:before {
+//   bottom: 0;
+//   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.7);
+//   content: '';
+//   left: 0;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+
+.row {
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
+  min-height: 100vh;
+  padding-top: 5em;
+}
+
+.paralax-item {
+  background: #FFFA8;
+  box-shadow: 0 0 5px #4A4A4A;
+  height: 550px;
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 1em;
+}

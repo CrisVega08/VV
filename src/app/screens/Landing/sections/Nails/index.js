@@ -19,16 +19,16 @@ function Carousel() {
   );
 
   return (
-    <section className={styles.carousel} id="nails">
+    <section className={`slide ${styles.carousel}`} id="nails">
       <div className={styles.carouselActions}>
         <div>
-          <button className={styles.carouselBtn}
+          <button className='carousel-btn'
             onClick={prevOption} 
             disabled={currentOption === 0}
           >
             <FontAwesomeIcon icon={faAngleLeft} color="white" />
           </button>
-          <button className={styles.carouselBtn}
+          <button className='carousel-btn'
             onClick={nextOption} 
             disabled={currentOption === options.length-1}
           ><FontAwesomeIcon icon={faAngleRight} color="white" /></button>

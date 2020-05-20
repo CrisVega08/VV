@@ -2,6 +2,8 @@ import serviceOne from './assets/Servicio_01_3x.png';
 import serviceTwo from './assets/Servicio_02_3x.png';
 import serviceThree from './assets/Servicio_03_3x.png';
 import serviceFour from './assets/Servicio_04_3x.png';
+import serviceFive from './assets/masajes_01.png';
+
 
 const data = {
     "properties": [
@@ -24,6 +26,11 @@ const data = {
         "_id": "593e92973d4d15eedb129aee",
         "index": 3,
         "picture": serviceFour,
+    },
+    {
+        "_id": "593e92973d4d45544529aee",
+        "index": 4,
+        "picture": serviceFive,
     }
   ]
 }

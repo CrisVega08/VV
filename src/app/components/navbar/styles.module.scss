@@ -10,7 +10,6 @@
 }
 
 .navbar-clicked {
-  // background-color: $sisal;
   .burger-icon {
     path {
       fill: $tacha;
@@ -47,8 +46,8 @@
 }
 
 .burger-icon {
-  width: 50px;
   cursor: pointer;
+  width: 50px;
 
   path {
     fill: $scarpa-flow;

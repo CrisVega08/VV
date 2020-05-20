@@ -3,14 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
 
 @import './text.scss';
+@import './buttons.scss';
+@import './parallax.scss';
 
 * {
   box-sizing: border-box;
-  font-family: "Playfair Display", 'Helvetica Neue', sans-serif;
+  font-family: 'Playfair Display', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0
+  margin: 0;
 }

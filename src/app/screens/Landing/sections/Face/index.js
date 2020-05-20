@@ -8,7 +8,7 @@ import facial from './assets/img_03.png'
 
 function Face() {
   return (
-    <section className={styles.container} id="face">
+    <section className={`slide ${styles.container}`} id="face">
       <div className={styles.service}>
         <img className={styles.images} src={eyeBrows} alt="eyeBrows"/>
         <div className={styles.servicesTexts}>

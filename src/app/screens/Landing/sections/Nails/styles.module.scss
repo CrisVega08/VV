@@ -2,6 +2,7 @@
 
 .carousel {
   align-items: center;
+  background-attachment: fixed;
   background-color: $quarter-spanish-white;
   display: flex;
   height: 100vh;
@@ -14,20 +15,6 @@
   flex-direction: column;
   margin-right: 50px;
   max-height: 450px;
-}
-
-.carousel-btn {
-  background-color: $tacha;
-  border-radius: 50%;
-  box-shadow: 0 8px 12px 0 $tacha;
-  height: 60px;
-  margin: 0 20px 75px 0;
-  width: 60px;
-
-  &:disabled {
-    box-shadow: none;
-    opacity: 0.3;
-  }
 }
 
 .carousel-title {
@@ -53,7 +40,9 @@
   height: 8px;
   margin: 0 4px;
   opacity: 0.3;
+  transition: height 200ms linear, width 200ms linear, margin-right 200ms linear;
   width: 8px;
+  will-change: width, height;
 }
 
 .active-dot {

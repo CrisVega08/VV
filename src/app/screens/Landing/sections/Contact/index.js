@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 
 function Contact() {
   return (
-    <section className={styles.container} id="contact">
+    <section className={`slide ${styles.container}`} id="contact">
       <h2 className={`main-title ${styles.title}`}>¿Qué esperas para visitarnos?</h2>
       <span className="normal-tex">En <strong>Verónica Vega Nails & Spa </strong>esperamos pronto tu visita, comunícate para mucha mas información.</span>
       <div className={styles.options}>
