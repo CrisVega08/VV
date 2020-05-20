@@ -1,0 +1,44 @@
+@import 'variables/colors';
+
+.container {
+  align-items: center;
+  background: left / contain no-repeat url('../../../../../assets/img_fondo_2x.png');
+  background-color: $bridal-heath;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  > :first-child {
+    margin-bottom: 5vh;
+  }
+
+  > :nth-child(2) {
+    margin-bottom: 10vh;
+  }
+}
+
+.options {
+  display: flex;
+}
+
+.option {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+
+  > :nth-child(-n + 2),
+  :nth-child(4) {
+    margin-bottom: 25px;
+  }
+}
+
+.title {
+  max-width: 900px;
+  text-align: center;
+}
+
+.icon-option {
+  width: 55px;
+}

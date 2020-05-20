@@ -1,0 +1,113 @@
+@import 'variables/colors';
+@import 'variables/sizes';
+
+.container {
+  background: right / contain no-repeat url('./assets/mano.png'),
+  right / contain no-repeat url('../../../../../assets/img_fondo_2x.png'),
+  linear-gradient(225.04deg, $sisal 0%, $nomad 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - #{var(--navbar-height)});
+  justify-content: center;
+  min-height: 575px;
+  padding: 0 15vw;
+
+  > * {
+    margin-bottom: 32px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  max-width: 550px;
+}
+
+.wellcome {
+  font-family: Roboto;
+  max-width: 540px;
+}
+
+.invitation {
+  max-width: 905px;
+}
+
+.service {
+  color: $scarpa-flow;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 26px;
+  margin-right: 35px;
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    background-color: $scarpa-flow;
+    bottom: -5px;
+    box-sizing: border-box;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 25px;
+  }
+}
+
+.scroll-element {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-icon {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+  width: 30px;
+}
+
+.scroll-text {
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.14px;
+  line-height: 31px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media only screen and (max-width: $medium-screens) {
+  .container {
+    min-height: 0;
+    padding: 0 10vw;
+
+    > * {
+      margin-bottom: 42px;
+    }
+  }
+  .main-title {
+    max-width: 440px;
+  }
+
+  .invitation {
+    max-width: 80vw;
+  }
+
+  .service {
+    margin-bottom: 10px;
+  }
+}

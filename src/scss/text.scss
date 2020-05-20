@@ -1,0 +1,79 @@
+@import './variables/colors';
+@import './variables/sizes';
+
+.main-title {
+  color: $scarpa-flow;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+.normal-title {
+  color: $scarpa-flow;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 58px;
+}
+
+.normal-text {
+  color: $scarpa-flow;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}
+
+.contact-option {
+  color: $scarpa-flow;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 43px;
+}
+
+.contact-info-option {
+  color: $scarpa-flow;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.massage-title {
+  color: $white;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 39px;
+}
+
+@media only screen and (max-width: $medium-screens) {
+  .main-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .normal-title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .normal-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: $mobile-screens) {
+  .main-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .normal-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .normal-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
