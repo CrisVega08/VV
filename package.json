@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "rescripts start",
-    "build": "react-scripts build",
+    "build": "rescripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@rescripts/cli": "0.0.13"
+    "@rescripts/cli": "0.0.13",
+    "@rescripts/rescript-env": "0.0.12"
   }
 }
