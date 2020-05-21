@@ -2,26 +2,26 @@ export const SECTIONS = [
   {
     id: 1,
     name: 'NOSOTROS',
-    action: 'nails'
+    action: 'home',
   },
   {
     id: 2,
     name: 'MANOS Y PIES',
-    action: 'eyebrows'
+    action: 'nails',
   },
   {
     id: 3,
     name: 'ROSTRO',
-    action: 'eyelashes'
+    action: 'face',
   },
-  {
-    id: 4,
-    name: 'MASAJES',
-    action: 'massages'
-  },
+  // {
+  //   id: 4,
+  //   name: 'MASAJES',
+  //   action: 'massages',
+  // },
   {
     id: 5,
     name: 'CONTACTO',
-    action: 'Facial'
-  }
-]
+    action: 'contact',
+  },
+];

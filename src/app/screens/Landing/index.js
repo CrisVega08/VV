@@ -1,22 +1,22 @@
 import React from 'react';
+import { Element } from 'react-scroll';
+
+import { SECTIONS } from './constants';
 
 import Navbar from '../../components/navbar';
 
-import Home from './sections/Home';
-import Nails from './sections/Nails';
-import Face from './sections/Face';
-import Contact from './sections/Contact';
 // import Spa from './sections/Spa';
+const renderSections = ({ route, component: Component }) => (
+  <Element name={route}>
+    <Component />
+  </Element>
+);
 
 function Landing() {
   return (
     <>
       <Navbar />
-      <Home />
-      <Nails />
-      <Face />
-      {/* <Spa  /> */}
-      <Contact />
+      {SECTIONS.map(renderSections)}
     </>
   );
 }
