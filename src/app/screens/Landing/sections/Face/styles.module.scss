@@ -57,10 +57,15 @@
 
 @media only screen and (max-width: $mobile-screens) {
   .images {
+    max-height: 25vw;
     max-width: 25vw;
   }
 
   .container {
     padding: 10vh 10px;
+  }
+
+  .service {
+    align-items: center;
   }
 }
