@@ -1,9 +1,9 @@
 export const SECTIONS = [
-  {
-    id: 1,
-    name: 'NOSOTROS',
-    action: 'home',
-  },
+  // {
+  //   id: 1,
+  //   name: 'NOSOTROS',
+  //   action: 'home',
+  // },
   {
     id: 2,
     name: 'MANOS Y PIES',
