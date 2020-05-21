@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import ScrollIcon from '../../../../components/scrollIcon';
+
 import { SERVICES } from './constants';
 import styles from './styles.module.scss';
 
@@ -13,10 +16,17 @@ function Home() {
           mejor talento humano y los mejores profesionales.
         </span>
         <div className={styles.services}>
-          {SERVICES.map(({ id, name }) => (
-            <button className={styles.service} key={id} type="button">
+          {SERVICES.map(({ id, name, action }) => (
+            <Link
+              className={styles.service}
+              spy={true}
+              smooth={true}
+              duration={500}
+              key={id}
+              to={action}
+            >
               {name}
-            </button>
+            </Link>
           ))}
         </div>
         <h4 className={`normal-title ${styles.invitation}`}>

@@ -2,26 +2,26 @@ export const SERVICES = [
   {
     id: 1,
     name: 'Nails',
-    action: 'nails'
+    action: 'nails',
   },
   {
     id: 2,
     name: 'Cejas',
-    action: 'eyebrows'
+    action: 'face',
   },
   {
     id: 3,
     name: 'Pestañas',
-    action: 'eyelashes'
+    action: 'face',
   },
   {
     id: 4,
     name: 'Masajes',
-    action: 'massages'
+    action: 'massages',
   },
   {
     id: 5,
     name: 'Limpieza Facial',
-    action: 'Facial'
-  }
-]
+    action: 'face',
+  },
+];

@@ -30,12 +30,8 @@ function Navbar() {
           {isOpen && (
             <ul className={styles.navbarToggle}>
               {SECTIONS.map(({ name, id, action }) => (
-                <li
-                  className={`${styles.section} ${styles.sectionToggle}`}
-                  key={id}
-                  onClick={toggle}
-                >
-                  <Link to={action} spy={true} smooth={true} duration={500}>
+                <li className={`${styles.section} ${styles.sectionToggle}`} key={id}>
+                  <Link to={action} spy={true} smooth={true} duration={500} onSetActive={toggle}>
                     {name}
                   </Link>
                 </li>
