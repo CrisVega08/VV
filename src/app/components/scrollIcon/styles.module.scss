@@ -1,0 +1,39 @@
+@import 'variables/colors';
+
+.scroll-element {
+  align-items: center;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+.scroll-icon {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+  width: 30px;
+}
+
+.scroll-text {
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.14px;
+  line-height: 31px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -9,7 +9,6 @@ const cssLoaderMatcher = createLoaderMatcher('css-loader');
 
 const sassLoaderMatcher = createLoaderMatcher('sass-loader');
 
-
 const addCamelCaseToCSSModules = config => {
   const fileLoaders = oneOfFileLoaders(config);
 
@@ -22,14 +21,13 @@ const addCamelCaseToCSSModules = config => {
         if (sassLoaderMatcher(use)) {
           use.options.sassOptions = {
             ...use.options.sassOptions,
-            includePaths: [path.resolve(__dirname, 'src/scss')]
+            includePaths: [path.resolve(__dirname, 'src/scss')],
           };
         }
       });
     }
   });
 };
-
 
 const customConfig = config => {
   addCamelCaseToCSSModules(config);
