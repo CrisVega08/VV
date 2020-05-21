@@ -8,21 +8,17 @@ import Face from './sections/Face';
 import Contact from './sections/Contact';
 import Spa from './sections/Spa';
 
-import styles from './styles.module.scss';
-
-function Landing () {
+function Landing() {
   return (
     <>
-      <Navbar  />
-      <Home  />
-      <Nails  />
-      <Face  />
-      <Spa  />
-      <Contact  />
-      <Nails  />
-      {/* <Scroll /> */}
+      <Navbar />
+      <Home />
+      <Nails />
+      <Face />
+      {/* <Spa  /> */}
+      <Contact />
     </>
-  )
+  );
 }
 
 export default Landing;

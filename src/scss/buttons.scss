@@ -1,4 +1,5 @@
 @import 'variables/colors';
+@import 'variables/sizes';
 
 .carousel-btn {
   background-color: $tacha;
@@ -13,5 +14,13 @@
   &:disabled {
     box-shadow: none;
     opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: $mobile-screens) {
+  .carousel-btn {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
   }
 }

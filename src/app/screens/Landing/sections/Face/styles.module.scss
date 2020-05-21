@@ -1,4 +1,5 @@
 @import 'variables/colors';
+@import 'variables/sizes';
 
 .container {
   background: right / contain no-repeat url('../../../../../assets/img_fondo_2x.png');
@@ -40,4 +41,26 @@
 
 .images {
   max-width: 30vh;
+}
+
+@media only screen and (max-width: $small-screens) {
+  .images {
+    max-width: 20vw;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: $mobile-screens) {
+  .images {
+    max-width: 25vw;
+  }
+
+  .container {
+    padding: 10vh 10px;
+  }
 }
