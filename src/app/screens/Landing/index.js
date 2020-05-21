@@ -6,7 +6,7 @@ import Home from './sections/Home';
 import Nails from './sections/Nails';
 import Face from './sections/Face';
 import Contact from './sections/Contact';
-import Spa from './sections/Spa';
+// import Spa from './sections/Spa';
 
 function Landing() {
   return (
