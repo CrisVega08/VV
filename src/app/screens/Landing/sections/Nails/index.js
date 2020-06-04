@@ -2,17 +2,39 @@ import React, { useState, useCallback } from 'react';
 import cn from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import useWindowWidth from '../../../../hooks/useWindowWidth';
+import { RESPONSIVE } from '../../../../constants';
+
+// import Swiper from 'react-id-swiper';
+import DesktopCarousel from './components/desktopCarousel';
+import MobileCarousel from './components/mobileCarousel';
 
 import styles from './styles.module.scss';
 import data from './constants';
 
 function Carousel() {
+  const [swiper, updateSwiper] = useState(null);
   const [options] = useState(data.properties);
   let [currentOption, setCurrentOption] = useState(0);
 
   const prevOption = useCallback(() => setCurrentOption(currentOption - 1), [currentOption]);
 
   const nextOption = useCallback(() => setCurrentOption(currentOption + 1), [currentOption]);
+
+  const gotoOption = index => setCurrentOption(index);
+
+  const isMobile = RESPONSIVE > useWindowWidth();
+
+  const goNext = () => {
+    if (swiper !== null) {
+      swiper.slideNext();
+    }
+  };
+  const goPrev = () => {
+    if (swiper !== null) {
+      swiper.slidePrev();
+    }
+  };
 
   return (
     <section className={`slide ${styles.carousel}`} id="nails">
@@ -37,35 +59,31 @@ function Carousel() {
         <div className={styles.dotsContainer}>
           {options.length &&
             options.map((option, index) => (
-              <span
+              <button
                 key={option._id}
                 className={cn(styles.dots, { [styles.activeDot]: index === currentOption })}
+                onClick={() => gotoOption(index)}
               />
             ))}
         </div>
       </div>
-      <div className={styles.seletedOption}>
-        <div className={`${styles.cardsSlider} ${styles[`activeSlide${currentOption}`]}`}>
-          <div
-            className={styles.cardsSliderWrapper}
-            style={{
-              transform: `translateX(-${currentOption * (100 / options.length)}%)`,
-            }}
-          >
-            {options.length &&
-              options.map(option => (
-                <img
-                  className={cn(styles.card, {
-                    [styles.selectedCard]: currentOption === option.index,
-                  })}
-                  key={option._id}
-                  src={option.picture}
-                  alt={option._id}
-                />
-              ))}
-          </div>
-        </div>
-      </div>
+      {isMobile ? (
+        <MobileCarousel
+          updateSwiper={updateSwiper}
+          goNext={goNext}
+          goPrev={goPrev}
+          options={options}
+          gotoOption={gotoOption}
+        />
+      ) : (
+        <DesktopCarousel
+          currentOption={currentOption}
+          prevOption={prevOption}
+          nextOption={nextOption}
+          options={options}
+          gotoOption={gotoOption}
+        />
+      )}
     </section>
   );
 }

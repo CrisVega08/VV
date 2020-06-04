@@ -89,9 +89,12 @@
   }
 }
 
-
 @media only screen and (max-width: $medium-screens) {
   .container {
+    background: center / contain no-repeat url('./assets/mano.png'),
+    right / contain no-repeat url('../../../../../assets/img_fondo_2x.png'),
+    linear-gradient(225.04deg, $sisal 0%, $nomad 100%);
+    background-attachment: none;
     min-height: 0;
     padding: 0 10vw;
 
