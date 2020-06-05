@@ -125,7 +125,7 @@
 @media only screen and (max-width: $mobile-screens) {
   .carousel {
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     overflow-x: hidden;
     padding: 5vh 0;
   }

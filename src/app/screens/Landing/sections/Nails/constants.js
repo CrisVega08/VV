@@ -1,8 +1,8 @@
-import serviceOne from './assets/Servicio_01_3x.png';
-import serviceTwo from './assets/Servicio_02_3x.png';
-import serviceThree from './assets/Servicio_03_3x.png';
-import serviceFour from './assets/Servicio_04_3x.png';
-import serviceFive from './assets/masajes_01.png';
+import serviceOne from './assets/Servicio_01_3x_2.png';
+import serviceTwo from './assets/Servicio_02_3x_2.png';
+import serviceThree from './assets/Servicio_03_3x_2.png';
+import serviceFour from './assets/Servicio_04_3x_2.png';
+import serviceFive from './assets/masajes_01_2.png';
 
 const data = {
   properties: [
