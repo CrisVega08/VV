@@ -28,24 +28,43 @@ function Carousel() {
   const goNext = () => {
     if (swiper !== null) {
       swiper.slideNext();
+      nextOption();
     }
   };
   const goPrev = () => {
     if (swiper !== null) {
       swiper.slidePrev();
+      prevOption();
     }
+  };
+
+  const goToMobile = index => {
+    if (index > currentOption) {
+      for (let i = currentOption; i < index; i++) {
+        swiper.slideNext();
+      }
+    } else if (index < currentOption) {
+      for (let i = index; i < currentOption; i++) {
+        swiper.slidePrev();
+      }
+    }
+    gotoOption(index);
   };
 
   return (
     <section className={`slide ${styles.carousel}`} id="nails">
       <div className={styles.carouselActions}>
         <div className={styles.carouselBtnsContainer}>
-          <button className="carousel-btn" onClick={prevOption} disabled={currentOption === 0}>
+          <button
+            className="carousel-btn"
+            onClick={isMobile ? goPrev : prevOption}
+            disabled={currentOption === 0}
+          >
             <FontAwesomeIcon icon={faAngleLeft} color="white" />
           </button>
           <button
             className="carousel-btn"
-            onClick={nextOption}
+            onClick={isMobile ? goNext : nextOption}
             disabled={currentOption === options.length - 1}
           >
             <FontAwesomeIcon icon={faAngleRight} color="white" />
@@ -62,7 +81,7 @@ function Carousel() {
               <button
                 key={option._id}
                 className={cn(styles.dots, { [styles.activeDot]: index === currentOption })}
-                onClick={() => gotoOption(index)}
+                onClick={() => (isMobile ? goToMobile(index) : gotoOption(index))}
               />
             ))}
         </div>
@@ -70,19 +89,13 @@ function Carousel() {
       {isMobile ? (
         <MobileCarousel
           updateSwiper={updateSwiper}
-          goNext={goNext}
-          goPrev={goPrev}
+          swiper={swiper}
+          currentOption={currentOption}
           options={options}
-          gotoOption={gotoOption}
+          updateCurrentIndex={setCurrentOption}
         />
       ) : (
-        <DesktopCarousel
-          currentOption={currentOption}
-          prevOption={prevOption}
-          nextOption={nextOption}
-          options={options}
-          gotoOption={gotoOption}
-        />
+        <DesktopCarousel currentOption={currentOption} options={options} />
       )}
     </section>
   );

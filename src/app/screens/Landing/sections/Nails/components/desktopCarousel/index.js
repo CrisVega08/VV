@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import styles from './styles.module.scss';
 
-function DesktopCarousel({ prevOption, nextOption, gotoOption, options, currentOption }) {
+function DesktopCarousel({ options, currentOption }) {
   return (
     <div className={styles.seletedOption}>
       <div className={`${styles.cardsSlider} ${styles[`activeSlide${currentOption}`]}`}>
