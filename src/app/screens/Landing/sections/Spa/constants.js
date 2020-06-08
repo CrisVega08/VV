@@ -1,6 +1,7 @@
 import MassageOne from './assets/spa_1.jpeg';
-import MassageTwo from './assets/spa_2.jpeg';
+import MassageTwo from './assets/spa_2.jpg';
 import MassageThree from './assets/spa_3.jpeg';
+import MassageFour from './assets/spa_4.jpeg';
 
 export default [
   {
@@ -27,12 +28,12 @@ export default [
     img: MassageThree,
     alt: 'relajantes',
   },
-  // {
-  //   _id: 3,
-  //   title: 'Masajes En Pareja',
-  //   message:
-  //     'En <strong>Verónica Vega Nails & Spa</strong> no solo nos preocupamos por la belleza, si no también por el bienestar corporal de nuestros clientes. Por eso contamos con la sección <strong>Masajes</strong>, en la cual tendrás Masajes relajantes, deportivos y reductores.',
-  //   img: MassageFour,
-  //   alt: 'pareja',
-  // },
+  {
+    _id: 3,
+    title: 'Limpieza facial profunda',
+    message:
+      '<strong>Una limpieza facial profunda</strong> es vital para cuidar la salud de la piel, su realización se basa en la remoción de impurezas de la piel y las células muertas con el fin de devolver energía, luminosidad y salud al rostro.',
+    img: MassageFour,
+    alt: 'facial',
+  },
 ];

@@ -47,14 +47,6 @@ function Spa() {
           </TransitionGroup>
         </h3>
         <span className={styles.infoContainer}>
-          {/* <TransitionGroup>
-            <CSSTransition
-              // classNames='fade'
-              key={options[currentOption]._id}
-              // appear={true}
-              timeout={1000}
-              classNames="fade"
-            > */}
           <TransitionGroup>
             <CSSTransition
               key={options[currentOption]._id}
@@ -67,8 +59,6 @@ function Spa() {
               />
             </CSSTransition>
           </TransitionGroup>
-          {/* </CSSTransition>
-          </TransitionGroup> */}
           <div className={styles.btnContainer}>
             <button className="carousel-btn" onClick={prevOption} disabled={currentOption === 0}>
               <FontAwesomeIcon icon={faAngleLeft} color="white" />
@@ -96,8 +86,6 @@ function Spa() {
         </div>
       </div>
     </section>
-    //   </CSSTransition>
-    // </TransitionGroup>
   );
 }
 
