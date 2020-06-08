@@ -1,8 +1,8 @@
-import serviceOne from './assets/Servicio_01_3x_2.png';
+import serviceOne from './assets/unas_1.jpg';
 import serviceTwo from './assets/Servicio_02_3x_2.png';
 import serviceThree from './assets/Servicio_03_3x_2.png';
-import serviceFour from './assets/Servicio_04_3x_2.png';
-import serviceFive from './assets/masajes_01_2.png';
+import serviceFour from './assets/unas_2.jpeg';
+import serviceFive from './assets/unas_3.jpeg';
 
 const data = {
   properties: [
@@ -12,24 +12,24 @@ const data = {
       picture: serviceOne,
     },
     {
-      _id: '593e9297ec4cca9c56bf61af',
-      index: 1,
-      picture: serviceTwo,
-    },
-    {
-      _id: '593e929773c71925e5d7c11c',
-      index: 2,
-      picture: serviceThree,
-    },
-    {
       _id: '593e92973d4d15eedb129aee',
-      index: 3,
+      index: 1,
       picture: serviceFour,
     },
     {
       _id: '593e92973d4d45544529aee',
-      index: 4,
+      index: 2,
       picture: serviceFive,
+    },
+    {
+      _id: '593e9297ec4cca9c56bf61af',
+      index: 3,
+      picture: serviceTwo,
+    },
+    {
+      _id: '593e929773c71925e5d7c11c',
+      index: 4,
+      picture: serviceThree,
     },
   ],
 };

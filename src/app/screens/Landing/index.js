@@ -6,8 +6,8 @@ import { SECTIONS } from './constants';
 import Navbar from '../../components/navbar';
 
 // import Spa from './sections/Spa';
-const renderSections = ({ route, component: Component }) => (
-  <Element name={route}>
+const renderSections = ({ route, component: Component }, index) => (
+  <Element name={route} key={index}>
     <Component />
   </Element>
 );

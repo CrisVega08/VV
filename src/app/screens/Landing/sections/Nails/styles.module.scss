@@ -109,21 +109,6 @@
 
 @media only screen and (max-width: $small-screens) {
   .carousel {
-    padding-left: 10vw;
-  }
-
-  .cards-slider-wrapper .card {
-    max-height: 75vh;
-    max-width: 350px;
-  }
-
-  .seleted-option {
-    height: 60vh;
-  }
-}
-
-@media only screen and (max-width: $mobile-screens) {
-  .carousel {
     flex-direction: column-reverse;
     justify-content: space-evenly;
     overflow-x: hidden;
@@ -148,6 +133,7 @@
   .carousel-title,
   .carousel-message {
     margin-bottom: 15px;
+    max-width: 300px;
     order: 2;
   }
 }

@@ -1,1 +1,1 @@
-export const RESPONSIVE = 720;
+export const RESPONSIVE = 768;

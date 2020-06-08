@@ -14,11 +14,11 @@ export const SECTIONS = [
     name: 'ROSTRO',
     action: 'face',
   },
-  // {
-  //   id: 4,
-  //   name: 'MASAJES',
-  //   action: 'massages',
-  // },
+  {
+    id: 4,
+    name: 'MASAJES',
+    action: 'spa',
+  },
   {
     id: 5,
     name: 'CONTACTO',

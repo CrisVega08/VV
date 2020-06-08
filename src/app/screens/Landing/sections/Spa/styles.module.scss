@@ -6,12 +6,54 @@
   padding: 0 15vw;
 }
 
+.container-carousel {
+  bottom: 160px;
+  height: 50vh;
+  left: 75%;
+  max-width: 350px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.services {
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+
+  .service-img {
+    // margin: 0 auto 0 calc(30px + auto);
+    object-fit: cover;
+    opacity: 0.5;
+    // transform: scale(0.6);
+    transition: opacity 500ms linear, border-color 300ms linear, background-color 300ms linear,
+    transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    width: 350px;
+  }
+
+  .selected-img {
+    opacity: 1;
+    // transform: scale(1);
+  }
+}
+
+.carousel-services {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  transition: transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 .service {
   display: flex;
   flex-direction: column;
+  left: 50%;
+  // margin: 0 auto 0 calc(30px + auto);
   max-width: 790px;
   position: relative;
   top: 30vh;
+  transform: translateX(calc(-50% - 75px));
 }
 
 .service-title {
@@ -20,50 +62,17 @@
   padding: 90px 40px 75px;
 }
 
+.service-title--content {
+  position: absolute;
+}
+
 .service-info {
   font-family: Roboto;
   font-size: 18px;
   letter-spacing: 0.23px;
-  max-width: 465px;
-  position: relative;
-  width: 100%;
-}
-
-.service-img {
-  bottom: 90px;
-  left: 0;
+  max-width: 500px;
   position: absolute;
-  width: 365px;
-}
-
-// .element {
-//   height: 250px;
-//   width: 250px;
-//   margin: 0 auto;
-//   background-color: red;
-//   animation-name: stretch;
-//   animation-duration: 1.5s; 
-//   animation-timing-function: ease-out; 
-//   animation-delay: 0;
-//   animation-direction: alternate;
-//   animation-iteration-count: infinite;
-//   animation-fill-mode: none;
-//   animation-play-state: running;
-// }
-.appear-animation {
-  animation-duration: 300ms;
-  animation-iteration-count: initial;
-  animation-name: appear;
-}
-
-@keyframes appear {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-  // transition: opacity 300ms linear, background-color 300ms linear,transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  width: 100%;
 }
 
 .info-container {
