@@ -1,8 +1,9 @@
 $navbar-height: 90px;
+$navbar-height-medium: 70px;
 $navbar-height-mobile: 60px;
 
 // media queries
-$medium-screens: 1200px;
+$medium-screens: 1366px;
 $mobile-screens: 420px;
 $small-screens: 768px;
 $table: 1024px;
@@ -14,5 +15,11 @@ $table: 1024px;
 @media only screen and (max-width: $small-screens) {
   :root {
     --navbar-height: #{$navbar-height-mobile};
+  }
+}
+
+@media only screen and (max-width: $medium-screens) {
+  :root {
+    --navbar-height: #{$navbar-height-medium};
   }
 }

@@ -1,4 +1,5 @@
 @import 'variables/colors';
+@import 'variables/sizes';
 
 .scroll-element {
   align-items: center;
@@ -35,5 +36,11 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: $medium-screens) {
+  .scroll-element {
+    bottom: 10px;
   }
 }
