@@ -25,14 +25,15 @@
 
 .carousel {
   // height: 100%;
-  // margin-bottom: 20px;
-  max-height: 370px;
+  margin-bottom: 15px;
+  max-height: 420px;
   max-width: 450;
   overflow: hidden;
 }
 
 .wrapper-swiper {
   display: flex;
+  max-height: 420px;
   // height: 100%;
   max-width: 70vw;
   // overflow: hidden;
