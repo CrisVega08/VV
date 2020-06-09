@@ -9,6 +9,7 @@
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  position: relative;
 
   > :first-child {
     margin-bottom: 5vh;
@@ -42,6 +43,13 @@
 
 .icon-option {
   width: 55px;
+}
+
+.instagram-icon {
+  bottom: 40px;
+  position: absolute;
+  right: 40px;
+  width: 60px;
 }
 
 @media only screen and (max-width: $mobile-screens) {
@@ -82,5 +90,11 @@
   .message {
     font-size: 16px;
     text-align: center;
+  }
+
+  .instagram-icon {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
   }
 }
