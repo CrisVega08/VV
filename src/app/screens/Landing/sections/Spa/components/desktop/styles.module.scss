@@ -27,7 +27,7 @@
     object-fit: cover;
     opacity: 0.5;
     transition: opacity 500ms linear, border-color 300ms linear, background-color 300ms linear,
-      transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform 500ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     width: 350px;
   }
 
@@ -85,6 +85,24 @@
 
   > button {
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: $medium-screens) {
+  .service-title--content {
+    font-size: 35px;
+  }
+
+  .service-title {
+    padding: 20px 30px;
+  }
+
+  .info-container {
+    height: 250px;
+  }
+
+  .service {
+    top: 50%;
+    transform: translate(calc(-50% - 75px), calc(-50% - -80px));
   }
 }
 

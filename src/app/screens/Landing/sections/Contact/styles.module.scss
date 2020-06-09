@@ -52,7 +52,7 @@
   width: 50px;
 }
 
-@media only screen and (max-width: $mobile-screens) {
+@media only screen and (max-width: $small-screens) {
   .icon-option {
     left: -50px;
     position: absolute;

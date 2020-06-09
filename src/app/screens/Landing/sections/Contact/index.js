@@ -29,7 +29,7 @@ function Contact() {
   return (
     <section className={`slide ${styles.container}`} id="contact">
       <h2 className={`main-title ${styles.title}`}>¿Qué esperas para visitarnos?</h2>
-      <span className={`normal-tex ${styles.message}`}>
+      <span className={`normal-text ${styles.message}`}>
         En <strong>Verónica Vega Nails & Spa </strong>esperamos pronto tu visita, comunícate para
         mucha mas información.
       </span>

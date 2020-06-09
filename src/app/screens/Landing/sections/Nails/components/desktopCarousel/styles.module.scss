@@ -106,3 +106,11 @@
   position: absolute;
   width: 100%;
 }
+
+@media only screen and (max-width: $medium-screens) {
+  .cards-slider-wrapper {
+    .card {
+      max-width: 350px;
+    }
+  }
+}
