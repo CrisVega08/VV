@@ -1,0 +1,80 @@
+@import 'variables/colors';
+@import 'variables/sizes';
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 600px;
+  // justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.content {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.carousel {
+  // height: 100%;
+  // margin-bottom: 20px;
+  // max-height: 600px;
+  max-width: 450;
+  overflow: hidden;
+}
+
+.wrapper-swiper {
+  display: flex;
+  // height: 100%;
+  max-width: 70vw;
+  // overflow: hidden;
+}
+
+.btn-right,
+.btn-left {
+  box-shadow: none;
+  margin: 0;
+  position: absolute;
+  right: -25px;
+  top: 28vh;
+  z-index: 1;
+}
+
+.btn-left {
+  left: -25px;
+}
+
+.dots-container {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.dots {
+  background-color: $tacha;
+  border-radius: 50%;
+  height: 8px;
+  margin: 0 4px;
+  opacity: 0.3;
+  transition: height 200ms linear, width 200ms linear, margin-right 200ms linear;
+  width: 8px;
+  will-change: width, height;
+}
+
+.active-dot {
+  height: 14px;
+  margin-right: 0 1px;
+  width: 14px;
+}
+
+.selected-card {
+  object-fit: cover;
+}

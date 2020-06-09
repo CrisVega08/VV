@@ -30,7 +30,7 @@ export default [
   },
   {
     _id: 3,
-    title: 'Limpieza facial profunda',
+    title: 'Limpieza facial',
     message:
       '<strong>Una limpieza facial profunda</strong> es vital para cuidar la salud de la piel, su realización se basa en la remoción de impurezas de la piel y las células muertas con el fin de devolver energía, luminosidad y salud al rostro.',
     img: MassageFour,
