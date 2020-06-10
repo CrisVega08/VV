@@ -103,11 +103,19 @@
     z-index: 1;
   }
 
-  .animate {
+  .instagram-pulse {
     &::before {
       height: 70px;
       width: 70px;
-      z-index: 1;
+      // z-index: 1;
+    }
+  }
+
+  .whatsapp-pulse {
+    &::before {
+      height: 70px;
+      width: 70px;
+      // z-index: 1;
     }
   }
 
@@ -145,6 +153,10 @@
 
   .instagram-icon {
     width: 30px;
+  }
+
+  .whatsapp-icon {
+    width: 50px;
   }
 
   .instagram-pulse {

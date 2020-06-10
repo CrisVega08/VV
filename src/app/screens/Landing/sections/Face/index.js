@@ -15,7 +15,7 @@ function Face() {
           <h3 className="normal-title">Cejas</h3>
           <p className="normal-text">
             <strong>Potenciamos los rasgos de tu rostro</strong> con un excelente diseño de cejas,
-            sombrado temporal y Micropigmentación.
+            sombreado temporal y Micropigmentación.
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@ function Face() {
         <div className={styles.servicesTexts}>
           <h3 className="normal-title">Pestañas</h3>
           <p className="normal-text">
-            Mejoramos la longitud, la cantidad y la curvatura y de tus pestañas naturales, con
+            Mejoramos la longitud, la cantidad y la curvatura de tus pestañas naturales, con
             técnicas como Lifting y Postizas.
           </p>
         </div>
