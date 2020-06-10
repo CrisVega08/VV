@@ -45,11 +45,53 @@
   width: 55px;
 }
 
-.instagram-icon {
+.animate {
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    animation: animate 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    border: 2px solid $tacha;
+    border-radius: 50%;
+    content: '';
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 70px;
+    z-index: 1;
+  }
+}
+
+.instagram-pulse {
   bottom: 40px;
   position: absolute;
   right: 40px;
+
+  &::before {
+    height: 80px;
+    left: -17px;
+    top: -16px;
+    width: 80px;
+  }
+}
+
+.whatsapp-pulse {
+  bottom: 120px;
+  position: absolute;
+  right: 25px;
+
+  &::before {
+    left: 3px;
+    top: -14px;
+  }
+}
+
+.instagram-icon {
   width: 50px;
+}
+.whatsapp-icon {
+  width: 80px;
 }
 
 @media only screen and (max-width: $small-screens) {
@@ -58,6 +100,15 @@
     position: absolute;
     top: 10px;
     width: 40px;
+    z-index: 1;
+  }
+
+  .animate {
+    &::before {
+      height: 70px;
+      width: 70px;
+      z-index: 1;
+    }
   }
 
   .options {
@@ -93,8 +144,37 @@
   }
 
   .instagram-icon {
+    width: 30px;
+  }
+
+  .instagram-pulse {
     bottom: 20px;
     right: 20px;
-    width: 30px;
+
+    &::before {
+      left: -22px;
+      top: -22px;
+    }
+  }
+
+  .whatsapp-pulse {
+    bottom: 90px;
+    right: 11px;
+
+    &::before {
+      left: -12px;
+      top: -22px;
+    }
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
   }
 }

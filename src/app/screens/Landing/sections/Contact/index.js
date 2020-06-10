@@ -4,6 +4,7 @@ import ubication from './assets/shape.png';
 import phone from './assets/phone-call.png';
 import clock from './assets/wall-clock.png';
 import instagram from './assets/Instagram_simple_icon.svg';
+import whatsapp from './assets/whatsapp.svg';
 
 import styles from './styles.module.scss';
 
@@ -31,7 +32,7 @@ function Contact() {
       <h2 className={`main-title ${styles.title}`}>¿Qué esperas para visitarnos?</h2>
       <span className={`normal-text ${styles.message}`}>
         En <strong>Verónica Vega Nails & Spa </strong>esperamos pronto tu visita, comunícate para
-        mucha mas información.
+        más información.
       </span>
       <div className={styles.options}>
         <div className={styles.option}>
@@ -59,12 +60,22 @@ function Contact() {
           <span className="contact-info-option">(300) 123 45 67</span>
         </div>
       </div>
-      <img
-        className={styles.instagramIcon}
-        src={instagram}
-        alt="scroll-icon"
-        onClick={openInstagram}
-      />
+      <div className={`${styles.animate} ${styles.instagramPulse}`}>
+        <img
+          className={styles.instagramIcon}
+          src={instagram}
+          alt="scroll-icon"
+          onClick={openInstagram}
+        />
+      </div>
+      <div className={`${styles.animate} ${styles.whatsappPulse}`}>
+        <img
+          className={styles.whatsappIcon}
+          src={whatsapp}
+          alt="scroll-icon"
+          onClick={generateMsnWhatsapp}
+        />
+      </div>
     </section>
   );
 }
