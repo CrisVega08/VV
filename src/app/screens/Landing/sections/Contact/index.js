@@ -60,20 +60,19 @@ function Contact() {
           <span className="contact-info-option">(300) 123 45 67</span>
         </div>
       </div>
-      <div className={`${styles.animate} ${styles.instagramPulse}`}>
+      <div onClick={openInstagram} className={`${styles.animate} ${styles.instagramPulse}`}>
         <img
           className={styles.instagramIcon}
           src={instagram}
           alt="scroll-icon"
-          onClick={openInstagram}
+          
         />
       </div>
-      <div className={`${styles.animate} ${styles.whatsappPulse}`}>
+      <div onClick={generateMsnWhatsapp} className={`${styles.animate} ${styles.whatsappPulse}`}>
         <img
           className={styles.whatsappIcon}
           src={whatsapp}
           alt="scroll-icon"
-          onClick={generateMsnWhatsapp}
         />
       </div>
     </section>

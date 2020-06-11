@@ -17,7 +17,7 @@ export const SERVICES = [
   {
     id: 4,
     name: 'Masajes',
-    action: 'massages',
+    action: 'spa',
   },
   {
     id: 5,
